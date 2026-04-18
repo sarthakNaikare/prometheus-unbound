@@ -205,7 +205,7 @@ python3 chaos/simulator.py random
 
 | Dashboard | Anomaly Detection | Decision Engine |
 |---|---|---|
-| ![dashboard](docs/screenshots/23_grafana_dashboard_complete.png) | ![anomaly](docs/screenshots/12_anomaly_detected.png) | ![decision](docs/screenshots/16_decision_engine_mock_mode.png) |
+| ![dashboard](screenshots/23_grafana_dashboard_complete.png) | ![anomaly](screenshots/12_anomaly_detected.png) | ![decision](screenshots/16_decision_engine_mock_mode.png) |
 
 ---
 
