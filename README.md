@@ -197,7 +197,7 @@ python3 chaos/simulator.py random
 | `GET /ai-logs` | All Ghostgres AI suggestions |
 | `GET /health-score/{tenant_id}` | Real-time health score |
 
-> 📖 Interactive docs: http://localhost:8000/docs
+> 📖 Interactive docs: `http://localhost:8000/docs`
 
 ---
 
