@@ -216,3 +216,26 @@ Backend engineer passionate about time-series data, distributed systems, and AI-
 🔗 Previous projects: [Stellar Observatory](https://github.com/sarthakNaikare/stellar-observatory-timescaledb) · [Resonance](https://github.com/sarthakNaikare/resonance)
 
 💼 Interested in: **Database Support Engineer - Weekend (India)** at Tiger Data
+
+## 🖥️ Live Dashboard
+
+Prometheus Unbound includes a real-time React dashboard that polls the FastAPI every 5 seconds.
+
+![Live Dashboard](screenshots/24_react_dashboard_live.png)
+
+**Dashboard features:**
+- 📊 Total metrics count from TimescaleDB
+- 🚨 Live anomaly feed with z-scores
+- 💯 Per-tenant health scores
+- 📝 Incident log with AI root causes
+- 👻 Ghostgres AI suggestions with confidence scores
+- 🔴 Live CPU, latency and error rate bars per tenant
+
+**To run the dashboard:**
+
+```bash
+cd dashboard
+PORT=3000 npm start
+```
+
+Then open http://localhost:3000
