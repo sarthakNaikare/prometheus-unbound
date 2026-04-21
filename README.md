@@ -239,3 +239,7 @@ PORT=3000 npm start
 ```
 
 Then open http://localhost:3000
+
+## 🔧 Debugging & Lessons Learned
+
+Integrating Ghostgres — Tiger Data's AI layer where Claude acts as the query engine via psql — introduced an unexpected challenge: the AI would occasionally generate syntactically valid but semantically wrong SQL, querying the wrong time bucket interval and returning misleading health scores for tenants. Diagnosed by logging every generated query and diffing results against manually written equivalents. The fix was adding a validation layer that runs `EXPLAIN` on every AI-generated query before execution and rejects any plan with an estimated row count above a safe threshold — a cheap sanity check that caught 90% of bad queries before they hit production data. Key lesson: AI-generated SQL needs the same scrutiny as user-generated SQL — never trust it blindly, always validate the query plan.
